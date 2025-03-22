@@ -38,7 +38,6 @@ project-root/<br>
 │   │   │   └── project-6.jpg<br>
 │   │   ├── misc/            # Miscellaneous images<br>
 │   │   │   ├── CTA.jpg<br>
-│   │   │   ├── girl-img2.png<br>
 │   │   │   ├── imageinshal.png<br>
 │   │   │   └── working-791849_1920.jpg<br>
 │   ├── styles/              # Folder for CSS files<br>
