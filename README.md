@@ -6,7 +6,7 @@
 
 - <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGNcROPazO1jI9SFGLW0xdtny_KZfkM-wtLA&s" alt="Temporary Image" width="50" height="50">
 
-# Project Structure
+# Project Structure:
 project-root/<br>
 ├── assets/                  # Folder for all static assets<br>
 │   ├── images/              # Folder for all images<br>
