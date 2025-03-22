@@ -152,8 +152,6 @@ nav{
   color: var(--body-color);
   z-index: 999 !important;
 
-
-  
 }
 
 .logo a{
@@ -187,6 +185,7 @@ ul li a:hover{
     color:var(--prime-color);
 
 }
+
 
 
 nav .nav_btn{
@@ -854,9 +853,54 @@ cursor: pointer;
 
 }
 
+.headings h1:hover::after{
+    width: 20%;
+
+}
+
+.services h1:hover::after{
+    display: none;
+    
+}
+
+
+/* calltoAction*/
+
+.calltoAction{
+    padding:180px 12% !important;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(images/CTA.jpg);
+    background-position: top;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.calltoAction h1{
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.calltoAction h1 span{
+    color:var(--prime-color);
+    display: block;
+}
 
 
 
+.calltoAction::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(24, 21, 21, 0.8);
+    z-index: -1;
+}
 
 
 
