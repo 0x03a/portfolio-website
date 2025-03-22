@@ -239,12 +239,15 @@ nav .nav_btn button{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 200px;
+    margin-bottom: 150px;
 }
 
 .about_img img{
+    
     width: 100%;
     height: 100%;
-    filter: drop-shadow(10px 5px 1px var(--prime-color));
+    filter: drop-shadow(10px 5px 1px var(--p-color));
 }
 
 .hero_content h2{
@@ -311,13 +314,14 @@ nav .nav_btn button{
 .hero_header .hero_img{
     height:100%;
     width: 60%;
+    margin-bottom: 150px;
 }
 
 .hero_img img{
     object-fit:contain;
     width: 100%;
     height: 100%;
-    filter: drop-shadow(10px 5px 1px var(--prime-color));
+    filter: drop-shadow(10px 5px 1px var(--p-color));
 }
 
 .about_me{
@@ -758,9 +762,6 @@ nav .nav_btn button{
     width: 20%;
 }
 
-.services h1:hover::after{
-    display: none;
-}
 
 /* calltoAction*/
 .calltoAction{
@@ -909,6 +910,8 @@ nav .nav_btn button{
 /* RESPONSIVE STYLES */
 /* Desktop (large) */
 @media (max-width: 1400px) {
+
+    
     .nav_btn{
         display: none;
     }
@@ -951,6 +954,8 @@ nav .nav_btn button{
 
 /* Tablet and smaller desktop */
 @media (max-width: 1100px) {
+
+    
     nav {
         padding: 3% 5%;
     }
@@ -1130,6 +1135,9 @@ nav .nav_btn button{
 /* RESPONSIVE STYLES */
 /* Desktop (large) */
 @media (max-width: 1400px) {
+
+
+
     .nav_btn{
         display: none;
     }
@@ -1172,6 +1180,31 @@ nav .nav_btn button{
 
 /* Tablet and smaller desktop */
 @media (max-width: 1100px) {
+
+ul, .menu {
+    
+  
+    flex-direction: column;
+    
+    align-items: flex-start;
+    background-color: var(--prime-color);
+  
+    
+    gap: 20px; /* Reduced from 50px */
+    transition: .3s;
+    z-index: 9999 !important;
+    border-radius: 0 0 0 10px; /* Added to round the bottom-left corner */
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.Show_menu {
+    width: 40%; /* Changed from 100% */
+    max-width: 170px; /* Added maximum width */
+   
+}
+
+
+
     nav {
         padding: 3% 5%;
     }
@@ -1236,6 +1269,7 @@ background-color: var(--p-color);
     }
     
     ul {
+        
         position: absolute;
         top: 80px;
         left: 0;
@@ -1361,7 +1395,33 @@ background-color: var(--p-color);
 /* Mobile devices */
 @media (max-width: 768px) {
   
+/* Mobile Menu - Reduced Width */
+ul, .menu {
+    position: absolute;
+    top: 80px;
+    right: 0; /* Changed from left: 0 to right: 0 */
+    left: auto; /* Added to override left positioning */
+    padding: 5% ;
+    flex-direction: column;
+    display:flex;
+    align-items: flex-end;
+    background-color: var(--prime-color);
+    width: 10%; /* Changed from 0/100% to a fixed percentage */
+    max-width: 30px; /* Added maximum width */
+    display: none;
+    
+    gap: 20px; /* Reduced from 50px */
+    transition: .3s;
+    z-index: 9999 !important;
+    border-radius: 0 0 0 10px; /* Added to round the bottom-left corner */
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
 
+.Show_menu {
+    width: 70%; /* Changed from 100% */
+    max-width: 140px; /* Added maximum width */
+    display: flex;
+}
     nav {
         padding: 3% 5%;
         height: 70px;

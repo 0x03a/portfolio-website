@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             // Use setTimeout to allow the transition to complete before hiding
             setTimeout(() => {
-                menu.style.display = 'none';
+                if (!menu.classList.contains('Show_menu')) {
+                    menu.style.display = '';
+                }
             }, 300); // Match transition time from CSS
         }
     });
@@ -67,60 +69,40 @@ document.addEventListener('DOMContentLoaded', function() {
             line.style.width = '0';
         });
         
-        // Close menu when clicking on a menu item
-        item.addEventListener('click', function() {
-            menu.classList.remove('Show_menu');
-            // Use setTimeout to allow the transition to complete before hiding
-            setTimeout(() => {
-                menu.style.display = 'none';
-            }, 300); // Match transition time from CSS
+        // Add click event to each menu item to close the EXPANDED menu (Show_menu state)
+        item.addEventListener('click', function(e) {
+            // Only close if menu is in expanded state (has Show_menu class)
+            if (menu.classList.contains('Show_menu')) {
+                // Remove the expanded state
+                menu.classList.remove('Show_menu');
+                
+                // Reset to default styling after transition
+                setTimeout(() => {
+                    // This will respect the CSS for different screen sizes
+                    // rather than forcing display: none
+                    menu.style.display = '';
+                    menu.style.width = '';
+                }, 300); // Match transition time from CSS
+            }
         });
     });
 });
+
 // DARK MODE AND LIGHT MODE
-let mode = document.querySelector('.mode'); // Selects the first element with the class "mode"
-// Selects the element with the class "mode" and adds a click event listener
-mode.addEventListener('click', () => {   // 1- Listens for a click event on the mode element, 2- When clicked, it executes the function inside.
-    // Toggles the "dark-mode" class on the <body> element
-    // If "dark-mode" is present, it removes it (light mode)
-    // If "dark-mode" is absent, it adds it (dark mode)
+let mode = document.querySelector('.mode'); 
+mode.addEventListener('click', () => {
     document.body.classList.toggle('light_mode'); 
-    
 });
 
-
-
 // TESTIMONIAL SWIPER
-
-// Initialize a new Swiper instance and target elements with the class 'MySwiper'
 var swiper = new Swiper('.MySwiper', {  
-   
-    // Number of slides visible at a time (default: 3 slides shown)
     slidesPerView: 3,  
-
-    // Space (in pixels) between each slide
     spaceBetween: 10,  
-
-    // Enables infinite looping of slides (so after the last slide, it loops back to the first)
     loop: true,  
-
-    // Automatically moves to the next slide without user interaction
     autoplay: true,  
-
-    // Define responsive breakpoints for different screen sizes
     breakpoints: {  
-        
-        // If screen width is 1300px or more, show 3 slides at a time
         1300: { slidesPerView: 3 },  
-        
-        // If screen width is between 900px and 1299px, show 2 slides at a time
         900: { slidesPerView: 2 },  
-        
-        // If screen width is less than 900px, show only 1 slide at a time
         0: { slidesPerView: 1 }  
     }
 });
-
-
-
-
