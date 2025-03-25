@@ -177,6 +177,5 @@ project-root/
 ## Author & Contact
 
 © INSHALR 2025 | All Rights Reserved
+<br>[Live Demo 🚀](https://0x03a.github.io/portfolio-website/)
 
-## Live Demo
-[https://0x03a.github.io/portfolio-website/](#)
