@@ -169,7 +169,7 @@ project-root/
 ├── Blog.html                # Blog page
 ├── Contact.html             # Contact page
 ├── index.html               # Home page (main entry point)
-├── info.text                # Information page (but it is not included in website, in this imp info is written)
+├── info.text                # Information page
 ├── info.txt                 # Text file with additional information
 └── Project.html             # Projects page
 ```
@@ -177,3 +177,6 @@ project-root/
 ## Author & Contact
 
 © INSHALR 2025 | All Rights Reserved
+
+## Live Demo
+[https://0x03a.github.io/portfolio-website/](#)
