@@ -97,81 +97,22 @@ start index.html
 xdg-open index.html
 ```
 
-3. **Using a local server (recommended)**
-
-For full functionality, it's better to use a local server:
-
-Using Python:
-
-```sh
-# Python 3
-python -m http.server
-
-# Python 2
-python -m SimpleHTTPServer
-```
-
-Using Node.js:
-
-```sh
-# Install if you haven't already
-npm install -g live-server
-
-# Run
-live-server
-```
-
-4. **Navigate to the site**
-
-Open your browser and go to `http://localhost:8000` (or the port shown in your terminal).
 
 ## Project Structure
 
 ```plaintext
-project-root/
-├── assets/                  # Folder for all static assets
-│   ├── images/              # Folder for all images
-│   │   ├── blog/            # Images for blog posts
-│   │   │   ├── blog-1.jpg
-│   │   │   ├── blog-2.jpg
-│   │   │   ├── blog-3.jpg
-│   │   │   ├── blog-4.jpg
-│   │   │   ├── blog-5.jpg
-│   │   │   └── blog-6.jpg
-│   │   ├── clients/         # Client profile images
-│   │   │   ├── client-profile-1.jpg
-│   │   │   ├── client-profile-2.jpg
-│   │   │   ├── client-profile-3.jpg
-│   │   │   ├── client-profile-4.jpg
-│   │   │   ├── client-profile-5.jpg
-│   │   │   └── client-profile-6.jpg
-│   │   ├── logos/           # Logos for technologies
-│   │   │   ├── boostrap-logo.png
-│   │   │   ├── css3-logo.png
-│   │   │   ├── html-logo.png
-│   │   │   └── Js-logo.png
-│   │   ├── projects/        # Project-related images
-│   │   │   ├── project-1.jpg
-│   │   │   ├── project-2.jpg
-│   │   │   ├── project-3.jpg
-│   │   │   ├── project-4.jpg
-│   │   │   ├── project-5.jpg
-│   │   │   └── project-6.jpg
-│   │   ├── misc/            # Miscellaneous images
-│   │   │   ├── CTA.jpg
-│   │   │   ├── imageinshal.png
-│   │   │   └── working-791849_1920.jpg
-│   ├── styles/              # Folder for CSS files
-│   │   └── styles.css
-│   └── scripts/             # Folder for JavaScript files
-│       └── script.js
-│
-├── Blog.html                # Blog page
-├── Contact.html             # Contact page
-├── index.html               # Home page (main entry point)
-├── info.text                # Information page
-├── info.txt                 # Text file with additional information
-└── Project.html             # Projects page
+Directory structure:
+└── 0x03a-portfolio-website/
+    ├── README.md
+    ├── index.html
+    ├── info.txt
+    ├── LICENSE
+    ├── package.json
+    ├── Project.html
+    ├── script.js
+    ├── styles.css
+    └── images/
+
 ```
 
 ## Author & Contact
