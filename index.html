@@ -1,378 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Protfolio Website</title>
-    <!-- Link style-->
+    <title>Inshal - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- Commented this like by pressing ctrl + / -->
-
-    <!-- Remix Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
-
-    <!-- Swipper Slider CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" />
-  </head>
-  <body>
+<!-- 
+    EmailJS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "bwcV9DEIT2y3VZDwc",
+      });
+   })();
+</script>
 
-    
+</head>
+<body>
     <nav class="navbar">
         <div class="logo">
             <a href="index.html">INSHAL</a>
         </div>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#aboutme">About us</a></li>
-            <li><a href="Project.html">Projects</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li class="Btn-Nav">
-                <button class="btn">Hire me <i class="ri-arrow-right-line"></i></button>  
-            </li>
-
-
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="project.html">Projects</a></li>
         </ul>
-
         <div class="nav_btn">
-            <button class="btn btns_Nav">
-                Hire me <i class="ri-arrow-right-line"></i>
+            <button class="btn btns_Nav" ><a href="https://www.linkedin.com/in/m-inshal-ba930a2a3/">
+                Hire me</a> <i class="ri-arrow-right-line"></i>
             </button>
             <div class="mode" title="Dark/Light Mode">
                 <i class="ri-sun-fill"></i>
             </div>
             <div class="bars">
-                <i class="ri-menu-line">
-                    
-                </i>
-
+                <i class="ri-menu-line"></i>
             </div>
-
-
         </div>
-
     </nav>
 
-
-    <!-- HERO HEADER  -->
-     <div class="hero_header">
+    <!-- HERO SECTION -->
+    <div class="hero_header">
         <div class="hero_content">
-            <h2> HELLO I'M</h2>
-            <h1> INSHAL</h1>
-            <h3> I'm a <span id="text">Web Developer </span></h3>  <!--The <span> element in HTML is an inline container used to apply styling or scripting to a specific part of text or content inside a block-level element. -->
+            <h2>HELLO I'M</h2>
+            <h1>INSHAL</h1>
+            <h3>I'm a <span id="text">Web Developer</span></h3>
             <p>
                 I'm a backend developer from Punjab with a love for web design. I enjoy building functional websites, solving problems on LeetCode, and exploring new algorithms.
             </p>
-
             <div class="hero_btn">
-                <a href="svgs.txt" download="svgs" class="btn">DOWNLOAD CV</a>
-
-
+                <a href="/InshalResume.pdf.pdf" download="/InshalResume.pdf.pdf" class="btn">DOWNLOAD CV</a>
             </div>
-        </div>
-        <div class="hero_img">
-            <img src="images/imageInshal.png" alt="">
-        </div>
-     </div>
-
-
-     <!-- ABOUT ME SECTION  -->
-      <section class="about_me" id="aboutme">
-        <div class="headings">
-            <h1> About Me</h1>
-
-            <div class="about_container">
-                <div class="about_img">
-                    <img src="images/imageInshal.png" alt="">
-                </div>
-                <div class="about_content">
-                    <h1>INSHAL p.</h1>
-                    <p> I'm a backend developer from Punjab who loves web design, problem-solving on LeetCode, and exploring new algorithms to build efficient and scalable websites.</p>
-                    <div class="row_container">
-                        <div class="row">
-                            <div class="info">
-                                <i class="ri-check-fill"></i>
-                                <p> Holistic Approach</p>
-                            </div>
-                            <div class="info">
-                                <i class="ri-check-fill"></i>
-                                <p>Proven Track Record</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="info">
-                                <i class="ri-check-fill"></i>
-                                <p>Attention to Detail</p>
-                            </div>
-                            <div class="info">
-                                <i class="ri-check-fill"></i>
-                                <p>Good Communication</p>
-                            </div>
-                        </div>
-
-                       
-                    </div>
-                    <div class="hero_btn">
-                        <button class="btn">Hire me <i class="ri-arrow-right-line"></i></button>
-                    </div>
-                </div>
-           
-            </div>
-        </div>
-      </section>
-   
-
-
-      <!-- SKILLS SECTION  -->
-       <section class="services" id="Services">
-        <div class="headings">
-            <h1>Skills</h1>
-        </div>
-
-        <div class="skills_cards">
-
-            <!-- card 1  -->
-        <div class="skill_card">
-            <img src="images/html-logo.png" alt="">
-            <h2>HTML</h2>
-        </div>
-            <!-- card 2  -->
-            <div class="skill_card">
-                <img src="images/css3-logo.png" alt="">
-                <h2>CSS3</h2>
-            </div>
-            <!-- card 3  -->
-            <div class="skill_card">
-                <img src="images/Js-logo.png" alt="">
-                <h2>JavaScript</h2>
-            </div>
-                <!-- card 4  -->
-        <div class="skill_card">
-            <img src="images/boostrap-logo.png" alt="">
-            <h2>BootStrap</h2>
         </div>
     </div>
 
-       </section>
+    <!-- ABOUT SECTION -->
+    <section class="about_me" id="about">
+        <div class="headings">
+            <h2>About Me</h2>
+        </div>
+        <div class="about_container">
+            <div class="about_content">
+                <h2>INSHAL P.</h2>
+                <p>I'm a backend developer from Punjab who loves web design, problem-solving on LeetCode, and exploring new algorithms to build efficient and scalable websites.</p>
+                <div class="row_container">
+                    <div class="row">
+                        <div class="info">
+                            <i class="ri-check-fill"></i>
+                            <p>Problem Solver</p>
+                        </div>
+                    </div>
+                    
+                        <div class="info">
+                            <i class="ri-check-fill"></i>
+                            <p>Love to Learn new Algorithms</p>
+                        </div>
+    
+                        <div class="info">
+                            <i class="ri-check-fill"></i>
+                            <p>Good Communication</p>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
 
-
-       <!-- SERVICES SECTION  -->
-
-       <section class="services">
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
         <div class="headings">
             <h1>My Services</h1>
-
         </div>
         <div class="service_cards">
-
-            <!-- card 1  -->
-
+            <!-- CARD 1 -->
             <div class="service_card">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#5f6368">
                     <path d="M280-440h400v-80H280v80Zm-80 320q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/>
                 </svg>
-                <h2>UI/UX design</h2>
-                <p>Creating and maintainability websites, involving task like coding, designing and build functionality. </p>
+                <h2>Problem Solving</h2>
+                <p>Doing Problem solving on <a href="https://leetcode.com/u/inshalbro/">LeetCode </a>to better my problem-solving Skills</p>
             </div>
-
-               <!-- card 2  -->
-
-               <div class="service_card">
-              
-<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#5f6368"><path d="M260-40q-24 0-42-18t-18-42v-760q0-24 18-42t42-18h440q24 0 42 18t18 42v760q0 24-18 42t-42 18H260Zm0-90v30h440v-30H260Zm0-60h440v-580H260v580Zm0-640h440v-30H260v30Zm0 0v-30 30Zm0 700v30-30Z"/></svg>
-                <h2>WEB Developement</h2>
-                <p>Creating and maintainability websites, involving task like coding, designing and build functionality. </p>
+            
+            <!-- CARD 2 -->
+            <div class="service_card">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#5f6368">
+                    <path d="M260-40q-24 0-42-18t-18-42v-760q0-24 18-42t42-18h440q24 0 42 18t18 42v760q0 24-18 42t-42 18H260Zm0-90v30h440v-30H260Zm0-60h440v-580H260v580Zm0-640h440v-30H260v30Zm0 0v-30 30Zm0 700v30-30Z"/>
+                </svg>
+                <h2>Web Development</h2>
+                <p>Creating and maintaining websites, involving tasks like coding, designing and building functionality.</p>
             </div>
-          
-
-    
         </div>
-       </section>
+    </section>
 
-
-       <!-- TESTIMONIAL 
-       
-       
-       What does .swiper-slide do?
-It defines an individual slide inside a Swiper slider.
-It works with .swiper-container, which holds multiple slides and allows navigation/swiping.
-Swiper.js automatically moves between .swiper-slide elements, creating a smooth slideshow effect.
-
-
-     .swiper-container → The main wrapper for the slider.
-.swiper-wrapper → Holds all slides together.
-.swiper-slide → Each individual slide.
-
-
-
-  <div class="swiper-slide"> → This defines a single slide in the Swiper slider.
-<div class="clients"> → A container for the client's details.
-<div class="client_det"> → Contains the client's profile picture.
-<div class="client_name"> → Displays the client’s name ("John") and job title ("CEO").
-<p class="swiper_pere"> → A paragraph showing the client's feedback about a web designer.
-       
-
-
-       -->
-
-
-
-
-
-
-       <section class="testimonial">
-       <div class="headings">
-        <h1>Testimonials</h1>
-       </div>
-       <!-- SWIPER  -->
-        <div class="swiper MySwiper">
-            <div class="swiper-wrapper">
-                <!-- slide 1-->
-                <div class="swiper-slide">
-                    <div class="clients">
-                        <div class="client_det">
-                            <div class="client_img">
-                            <img src="images/client-profile-1.jpg" alt="">
-                        </div>
-                        </div>
-                        <div class="client_name">
-                            <h2>John</h2>
-                            <p> CEO</p>
-                        </div>
-                        <p class="swiper_pere">
-                            Thanks to Web Designer, we've seen a significant increase in traffic and
-                            engagement on our website, ultimately leading to a boost in sales. 
-                        </p>
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <div class="headings">
+            <h1>LET'S GET <br> IN TOUCH</h1>
+            <div class="contact_detail">
+                <!-- DETAIL 1 -->
+                <div class="contact_det">
+                    <i class="ri-mail-open-line"></i>
+                    <div class="contact_det_text">
+                        <h2>E-mail</h2>
+                        <p>inshalrrr@gmail.com</p>
                     </div>
-                  
-                 </div>
-
-
-   <!-- slide 2-->
-   <div class="swiper-slide">
-    <div class="clients">
-        <div class="client_det">
-            <div class="client_img">
-                <img src="images/client-profile-2.jpg" alt="">
-            </div>
-        </div>
-        <div class="client_name">
-            <h2>Mark Henry</h2>
-            <p> CEO</p>
-        </div>
-        <p class="swiper_pere">
-            Thanks to Web Designer, we've seen a significant increase in traffic and
-            engagement on our website, ultimately leading to a boost in sales. 
-        </p>
-    </div>
-    
- </div>
-
-
-    <!-- slide 3-->
-    <div class="swiper-slide">
-        <div class="clients">
-            <div class="client_det">
-                <div class="client_img">
-                    <img src="images/client-profile-3.jpg" alt="">
                 </div>
-            </div>
-            <div class="client_name">
-                <h2>Wood</h2>
-                <p> CEO</p>
-            </div>
-
-            <p class="swiper_pere">
-                Thanks to Web Designer, we've seen a significant increase in traffic and
-                engagement on our website, ultimately leading to a boost in sales. 
-            </p>
-        </div>
-       
-     </div>
-
+                
+        
             </div>
         </div>
-       </section>
-
-
-           <!-- CONTACT SECTION  -->
-
-           <section class="contact">
-            <div class="headings">
-                <h1>LET'S GET <br> IN TOUCH</h1>
-                <div class="contact_detail">
-                    <!-- detail 1 -->
-                     <div class="contact_det">
-                        <i class="ri-mail-open-line">
-                        </i>
-                        <div class="contact_det_text">
-                            <h2>E-mail</h2>
-                             <p>inshalrrr@gmail.com</p>
-                        </div>
-                     </div>
-
-
-                       <!-- detail 2 -->
-                       <div class="contact_det">
-                        <i class="ri-phone-line">
-                        </i>
-                        <div class="contact_det_text">
-                            <h2>Phone-No</h2>
-                             <p>111-222-333</p>
-                        </div>
-                     </div>
-
-
-                       <!-- detail 3 -->
-                       <div class="contact_det">
-                        <i class="ri-map-pin-line">
-                        </i>
-                        <div class="contact_det_text">
-                            <h2>LOCATION</h2>
-                             <p>234 Main street FSD</p>
-                        </div>
-                     </div>
-
-                </div>
-
-            </div>
-            <div class="contact_inputs">
-                <div class="inputs_top">
-                    <div class="inputs_address">
-                        <h1>Name</h1>
-                        <input type="text" placeholder="Enter Your name" required>
+        <form id="contactForm" class="contact_inputs">
+            <div class="inputs_top">
+                <div class="inputs_address">
+                    <h1>Name</h1>
+                    <input type="text" id="name" name="name" placeholder="Enter Your name" required>
                 </div>
                 <div class="inputs_address">
                     <h1>Email</h1>
-                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                </div>
             </div>
             <div class="inputs_message">
-                <h2> Message</h2>
-                <textarea placeholder="Optional" rows="8" cols="32"></textarea>
-
+                <h2>Message</h2>
+                <textarea id="message" name="message" placeholder="Enter the message" rows="8" cols="32" required></textarea>
             </div>
-            <button class="btn">SEND MESSAGE</button>
-            </div>
-           </section>
+            <button type="submit" class="btn">SEND MESSAGE</button>
+            <div id="formStatus"></div>
+        </form>
+    </section>
 
+    <section class="copyright">
+        <h2>@ inshalr p 2025 | All rights Reserved.</h2>
+        <div class="copy_right_icon">
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-twitter-x-fill"></i>
+            <i class="ri-linkedin-fill"></i>
+            <i class="ri-dribbble-fill"></i>
+        </div>
+    </section>
 
-           <section class="copyright">
-            <h2>@ inshalr p 2025 | All rights Reserved.</h2>
-            <div class="copy_right_icon">
-                <i class="ri-facebook-circle-fill"></i>
-                <i class="ri-twitter-x-fill"></i>
-                <i class="ri-linkedin-fill"></i>
-                <i class="ri-dribbble-fill"></i>
-            </div>
-           </section>
-
-
-
-
-    <!-- Swiper Slider Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
