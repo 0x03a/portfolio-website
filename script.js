@@ -168,5 +168,6 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', sendMail);
     }
     
-    // Rest of your existing code...
+    
 });
+
